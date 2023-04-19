@@ -1,0 +1,109 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    // background: white;
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+
+        .showCase {
+            width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            >img {
+
+                @media (max-width: $sm) {
+                    width: 100%;
+                }
+
+                border-radius: 20px;
+                max-width: 25rem;
+                max-height: 18rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                cursor: pointer;
+            }
+        }
+
+        .experiences {
+            width: 100%;
+            flex-direction: column;
+            gap: 1.4rem;
+            position: relative;
+            .line{
+                width: 100%;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                border: .01px solid rgb(203, 202, 202);
+            }
+            .exp {
+                width: 100%;
+                justify-content: space-between;
+                line-height: 40px;
+                align-items: flex-start;
+                
+                >div {
+                    flex: 1;
+                }
+                
+                .role {
+                    .boxContainer {
+                        
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+                      
+                      .box {
+                        box-shadow: rgb(0 0 0 / 5%) -3px 11px 13px 0px;
+                        background-color: #f5f5f5;
+                        border: 1px solid rgb(196, 194, 194); /* add border property */
+                        border-radius: 10px;
+                        padding: 4px 8px;
+                        margin-right: 8px;
+                        margin-bottom: 8px;
+                      }
+                      
+                    margin-left: 2rem;
+                }
+            }
+
+            .progressbar {
+                position: absolute;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+                left: 45%;
+
+                .line {
+                    position: absolute;
+                    height: 97%;
+                    width: 2px;
+                    background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+                    background-position: right;
+                    background-size: 2px 30px;
+                    background-repeat: repeat-y;
+                    left: 48%;
+                    z-index: 1;
+                    border-radius: 5px;
+                }
+
+                >div {
+                    flex: 1;
+                    padding-top: .8rem;
+                    z-index: 2;
+
+                    .circle {
+                        border-radius: 50%;
+                        background: black;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
