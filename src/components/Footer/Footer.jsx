@@ -21,7 +21,7 @@ const Footer = () => {
             <br /> For any queries or offers,
           </span>
           <span className="primaryText">
-             <a href="charusharma140302@gmail">get in touch</a>
+             <a href="mailto:charusharma140302@gmail">get in touch</a>
           </span>
         </div>
 
