@@ -24,7 +24,7 @@ export const projectExperience = [
 
 export const WhatDoIHelp = [
   "Enthusiast programmer, developer, problem solver having deep interest in learning new things,looking for some great opportunities in an organization where I can grow myself and open up to new technologies.",
-  "I am a pre-final year undergrad student at The LNMIIT, pursuing my B.Tech degree in Computer Science Engineering (CSE) with an overall CGPA of 7.15.",
+  "I am a pre-final year undergrad student at The LNMIIT, pursuing my B.Tech degree in Computer Science Engineering (CSE) with an overall CGPA of 7.17.",
 ];
 
 export const workExp = [
