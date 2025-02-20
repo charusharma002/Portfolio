@@ -1,0 +1,13 @@
+name: Setup Spoke Tenant Data Lake
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  setup-tenant:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate delay
+        run: sleep 10
+      - name: prints
+        run: echo "Hello, World!"
