@@ -11,7 +11,7 @@ jobs:
       - name: Simulate delay
         run: sleep 3
       - name: print value
-        run: echo "this is the value of id: ${{ github.event.client_payload.id }}"
+        run: echo "this is the value of id ${{ github.event.client_payload.id }}"
       - name: lambda invoke
         run: |
           aws invoke-lambda --function-name demo-function response.json
