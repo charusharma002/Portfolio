@@ -1,13 +1,21 @@
 name: Setup Spoke Tenant Data Lake
 on:
   repository_dispatch:
-  workflow_dispatch:
 
 jobs:
   setup-tenant:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
       - name: Simulate delay
-        run: sleep 10
+        run: sleep 3
+      - name: print value
+        run: echo "this is the value of id: ${{ github.event.client_payload.id }}"
+      - name: lambda invoke
+        run: |
+          aws invoke-lambda --function-name demo-function response.json
+      - name: print response
+        run: cat response.json
       - name: prints
         run: echo "Hello, World!"
